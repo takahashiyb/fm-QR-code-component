@@ -1,28 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | QR code component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | QR code component</title>
 
-  Improve your front-end skills by building projects
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        margin: 0;
+      }
+      body {
+        background-color: hsl(212, 45%, 89%);
+      }
+      .qr-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50%-50%;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 18px;
+        padding: 16px 16px;
+        flex-direction: row;
+        box-shadow: 0 17px 20px rgb(188, 200, 214, 0.7);
+        width: 300px;
+        transition: 0.8s ease;
+      }
+      .qr-container * {
+        margin-bottom: 16px;
+      }
+      .qr-container img {
+        border-radius: 12px;
+        width: 100%;
+      }
+      .qr-container p {
+        font-family: "Outfit", sans-serif;
+        text-align: center;
+        font-size: 100%;
+        font-weight: 400;
+        padding: 0 4%;
+      }
+      .qr-container .card-title {
+        font-size: 133%;
+        font-weight: 700;
+      }
 
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      footer {
+        position: fixed;
+        bottom: 30px;
+        justify-self: center;
+        opacity: 0;
+      }
+
+      @media (min-width: 376px) {
+        .qr-container {
+          max-height: 340px;
+          max-width: 210px;
+          padding: 10px;
+        }
+        .qr-container img {
+          border-radius: 8px;
+        }
+        .qr-container p {
+          font-size: 11px;
+          font-weight: 400;
+        }
+        .qr-container .card-title {
+          font-size: 15px;
+        }
+        footer {
+          opacity: 1;
+        }
+      }
+
+      @media (max-height: 376px) {
+        footer {
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="qr-container">
+      <img src="/images/image-qr-code.png" alt="" />
+      <p class="card-title">
+        Improve your front-end skills by building projects
+      </p>
+      <p>
+        Scan the QR code to visit Frontend Mentor and take your coding skills to
+        the next level
+      </p>
+    </div>
+    <footer>
+      Improve your front-end skills by building projects Scan the QR code to
+      visit Frontend Mentor and take your coding skills to the next level
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Takahashiyb</a>.
+      </div>
+    </footer>
+  </body>
 </html>
