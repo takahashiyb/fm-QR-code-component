@@ -10,14 +10,13 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  translate: -50%-50%;
+  translate: -50% -50%;
   background-color: hsl(0, 0%, 100%);
   border-radius: 20px;
   padding: 16px 16px 40px;
   flex-direction: row;
   height: 499px;
   width: 320px;
-  transition: 0.8s ease;
 }
 .qr-container * {
   margin-bottom: 16px;
