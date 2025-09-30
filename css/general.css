@@ -1,5 +1,7 @@
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
   background-color: hsl(212, 45%, 89%);
@@ -55,8 +57,8 @@ footer {
 
 @media (min-width: 376px) {
   .qr-container {
-    max-height: 340px;
-    max-width: 210px;
+    max-height: 400px;
+    max-width: 220px;
     padding: 10px;
   }
   .qr-container img {
