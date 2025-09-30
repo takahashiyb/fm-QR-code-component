@@ -12,31 +12,34 @@ body {
   left: 50%;
   translate: -50%-50%;
   background-color: hsl(0, 0%, 100%);
-  border-radius: 18px;
-  padding: 16px 16px;
+  border-radius: 20px;
+  padding: 16px 16px 40px;
   flex-direction: row;
-  box-shadow: 0 17px 20px rgb(188, 200, 214, 0.7);
-  width: 300px;
+  height: 499px;
+  width: 320px;
   transition: 0.8s ease;
 }
 .qr-container * {
   margin-bottom: 16px;
 }
 .qr-container img {
-  border-radius: 12px;
+  border-radius: 20px;
+  margin-bottom: 24px;
   width: 100%;
 }
 .qr-container p {
   font-family: "Outfit", sans-serif;
   text-align: center;
-  font-size: 100%;
-  font-weight: 400;
-  padding: 0 4%;
+  font-size: 15px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
   color: hsl(216, 15%, 48%);
 }
 .qr-container .card-title {
-  font-size: 133%;
-  font-weight: 700;
+  font-size: 22px;
+  line-height: 120%;
+  letter-spacing: 0px;
+  font-weight: 800;
   color: hsl(218, 44%, 22%);
 }
 
@@ -50,28 +53,24 @@ body {
 
 footer {
   position: fixed;
-  bottom: 30px;
+  bottom: 10px;
   justify-self: center;
   opacity: 0;
 }
 
 @media (min-width: 376px) {
   .qr-container {
-    max-height: 400px;
-    max-width: 220px;
-    padding: 10px;
-  }
-  .qr-container img {
-    border-radius: 8px;
-  }
-  .qr-container p {
-    font-size: 11px;
-    font-weight: 400;
-  }
-  .qr-container .card-title {
-    font-size: 15px;
+    max-height: 499px;
+    max-width: 320px;
   }
   footer {
+    background-color: white;
+    padding: 4px 16px;
+    transition: 0.8 ease;
+    border-radius: 20px;
+    opacity: 0.3;
+  }
+  footer:hover {
     opacity: 1;
   }
 }
