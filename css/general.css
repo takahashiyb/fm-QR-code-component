@@ -55,18 +55,14 @@ footer {
   bottom: 10px;
   justify-self: center;
   opacity: 0;
+  background-color: white;
+  padding: 4px 16px;
+  transition: 0.8 ease;
+  border-radius: 20px;
 }
 
-@media (min-width: 376px) {
-  .qr-container {
-    max-height: 499px;
-    max-width: 320px;
-  }
+@media (min-height: 550px) {
   footer {
-    background-color: white;
-    padding: 4px 16px;
-    transition: 0.8 ease;
-    border-radius: 20px;
     opacity: 0.3;
   }
   footer:hover {
@@ -74,8 +70,9 @@ footer {
   }
 }
 
-@media (max-height: 376px) {
-  footer {
-    opacity: 0;
+@media (min-height: 376px) {
+  .qr-container {
+    max-height: 499px;
+    max-width: 320px;
   }
 }
